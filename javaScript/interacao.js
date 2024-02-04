@@ -48,7 +48,7 @@ controls.forEach((control) => {
 */
 document.addEventListener('DOMContentLoaded', function() {
   const section = document.getElementById('quem-somos');
-  const triggerHeight = 250; // Altura em pixels a partir do topo da página para acionar a animação
+  let triggerHeight = 250; // Altura em pixels a partir do topo da página para acionar a animação
 
   function handleScroll() {
     const scrollPosition = window.scrollY;
@@ -59,11 +59,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // Adiciona o ouvinte de evento de rolar
+  function updateTriggerHeight() {
+    if (window.innerWidth <= 768) {
+      triggerHeight = 130; // Altura de acionamento menor para dispositivos móveis
+    } else {
+      triggerHeight = 250; // Altura de acionamento padrão para telas maiores
+    }
+
+    handleScroll(); // Chama a função para verificar a posição imediatamente após a atualização da altura
+  }
+
+  // Adiciona os ouvintes de evento
   window.addEventListener('scroll', handleScroll);
+  window.addEventListener('resize', updateTriggerHeight);
 
   // Chama a função inicialmente para verificar a posição no carregamento da página
-  handleScroll();
+  updateTriggerHeight();
 });
 
 function buscarEndereco(cep) {
@@ -146,4 +157,8 @@ function mostrarRestante() {
       restanteEquipe.style.display = 'none';
       linkContinueLendo.style.display = 'inline';
   }
+}
+function toggleMenu() {
+  const listItems = document.querySelector('.list-items');
+  listItems.classList.toggle('show');
 }
