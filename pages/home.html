@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Projetos Sustentáveis</title>
+    <link rel="shortcut icon" href="../images/logoprime.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styleHome.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <Section>
+        <header>
+            <div class="flex-container menu">
+              <img src="../images/logoPrimeProjetos.png" alt="Logo da Prime, escrito em branco com um reflexo de luz do Sol">
+              <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+            </div>
+            <ul class="list-items">
+              <li><a href="#">Home</a></li>
+              <li><a href="../pages/quemSomos.html">QuemSomos</a></li>
+              <li><a href="#equipe">Equipe</a></li>
+              <li><a href="#contatos">Contatos</a></li>
+              <a href="https://wa.me/5511992292041" target="_blank"><img src="../images/whatsapp.png" height="60px"></a>
+              <a href="https://wa.me/5511992292041" target="_blank"><img src="../images/11.png" height="50px" alt=""></a>
+            </ul>
+          </header>
+    </Section>
+  <Section>
+    <div class="opacity">
+        <video  autoplay muted loop class="myVideo" src="../videos/video home.mp4"  type="video/mp4"></video>
+    </div>
+  </Section>  
+  <Section>
+    <div class="text">
+        <h1>Produza sua Própria Energia!</h1>
+        <h5>Transforme o seu lar em uma fonte inesgotável de Energia Renovável</h5>
+    </div>
+  </Section>
+  <Section>
+    <section>
+        <div class="carrossel-container" id="beneficios">
+            <div class="navegacao seta-esquerda" onclick="mudarImagem(-1)">&#9666;</div>
+            <div class="carrossel" id="carrossel">
+              <div class="imagem" onclick="zoomImagem(this)">
+                <img src="../images/economia.png" alt="Imagem 1">
+              </div>
+              <div class="imagem" onclick="zoomImagem(this)">
+                <img src="../images/2.png" alt="Imagem 2">
+              </div>
+              <div class="imagem" onclick="zoomImagem(this)">
+                <img src="../images/3.png" alt="Imagem 3">
+              </div>
+              <div class="imagem" onclick="zoomImagem(this)">
+                <img src="../images/4.png" alt="Imagem 3">
+              </div>
+              <div class="imagem" onclick="zoomImagem(this)">
+                <img src="../images/5.png" alt="Imagem 3">
+              </div>
+              <div class="imagem" onclick="zoomImagem(this)">
+                <img src="../images/6.png" alt="Imagem 3">
+              </div>
+              <!-- Adicione mais imagens conforme necessário -->
+            </div>
+            <div class="navegacao seta-direita" onclick="mudarImagem(1)">&#9656;</div>
+          </div>
+    </section>
+  </Section>
+</body>
+<script src="../javaScript/interacao.js"></script>
+</html>

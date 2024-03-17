@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+}
+.myVideo {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .opacity{
+    background-color:#535353;
+    opacity: 0.7;
+    text-align: center;
+  }
+.text{
+    position:absolute;
+   text-align: center;
+   top: 50%;
+   left: 30%;
+   font-size: 1.3em;
+}
