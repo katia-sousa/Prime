@@ -146,7 +146,7 @@ function mudarImagem(direction) {
   const offset = imagens[currentIndex].offsetLeft;
   carrossel.scrollLeft = offset;
 }
-function mostrarRestante() {
+/*function mostrarRestante() {
   var restanteEquipe = document.getElementById('restante-equipe');
   var linkContinueLendo = document.querySelector('a[href="javascript:void(0);"]');
 
@@ -157,7 +157,7 @@ function mostrarRestante() {
       restanteEquipe.style.display = 'none';
       linkContinueLendo.style.display = 'inline';
   }
-}
+}*/
 function toggleMenu() {
   const listItems = document.querySelector('.list-items');
   listItems.classList.toggle('show');
