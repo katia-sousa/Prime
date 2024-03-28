@@ -9,6 +9,8 @@
   --cor-branca: #fff;
   --cor-cinza:#676c72;
   --cor-azul-escuro:#122a57;
+  --cor-preta:black;
+  --cor-verde:#4caf50;
 
 }
 ul{
@@ -169,6 +171,27 @@ header {
     background-position-y: center;
     border: solid var(--cor-branca);
 }
+/* Formulário dados do cliente começa aqui*/ 
+.envolta{
+  margin: 0 auto;
+  position: relative;
+  top: 22%;
+  width: 360px;
+  height: 490px;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+}
+.text-orçamento{
+  padding: 5px;
+  color: var(--cor-branca);
+  background-color:var(--cor-verde);
+  border-radius: 20px;
+  width: 180px;
+  height: auto;
+  text-align: center;
+  margin-left: 25%;
+
+}
     .fundo {
         background-color: #f4f4f4;
         padding: 20px;
@@ -181,18 +204,19 @@ header {
       }
       
       .menorEspaco {
-        margin-right: 10px; /* Ajuste conforme necessário */
+        margin-right: 10px; /* Ajuste conforme necessário */       
       }
 form {
     margin: 0 auto;
     position: relative;
-    top: 13%;
+    top: 2%;
     background-color: var(--cor-branca);
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
+    max-height: 400px;
     margin: 0 auto;
       }
   
@@ -204,27 +228,29 @@ form {
   
   input {
     width: calc(100% - 10px);
-    padding: 10px;
+    padding: 3px;
     margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 50px;
     box-sizing: border-box;
   }
   
   button {
     width: 100%;
-    padding: 10px;
-    background-color: #4caf50;
-    color: #fff;
+    padding: 4px;
+    background-color: var(--cor-verde);
+    color:var(--cor-branca);
     border: none;
-    border-radius: 4px;
+    border-radius: 50px;
     cursor: pointer;
     margin-top: 2%;
+    
   }
   
   button:hover {
     background-color: #45a049;
   }
+  /* Formulário dados do cliente termina aqui*/ 
 #quem-somos {
     display: flex;
     flex-direction: row-reverse;
@@ -549,7 +575,7 @@ footer .footer{
 
     .alinhamento {
         position: absolute;
-        top: 40%;
+        top: 30%;
         right: 30%;
     }
     .equipe{
