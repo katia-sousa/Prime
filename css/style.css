@@ -575,14 +575,14 @@ footer .footer{
     }
 
     .texto-inicio {
-        top: 15%;
+        top: 5%;
         font-size: 0.9em;
         color: var(--cor-branca);
     }
 
     .alinhamento {
         position: absolute;
-        top: 30%;
+        top: 15%;
         right: 20%;
     }
     .equipe{

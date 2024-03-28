@@ -46,6 +46,16 @@ h1{
     text-align: center;
     top: 10%;
     left: 10%;
-    font-size: 1em;  
+    font-size: 0.5em;  
+}
+.espaco h2{
+  font-size: 0.8em;
+}
+.espaco p{
+  font-size: 0.8em;  
+}
+.beneficios img{
+  text-align: center;
+ width: 90px;
 }
 }
