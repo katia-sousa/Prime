@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function updateTriggerHeight() {
     if (window.innerWidth <= 768) {
-      triggerHeight = 130; // Altura de acionamento menor para dispositivos móveis
+      triggerHeight = 100; // Altura de acionamento menor para dispositivos móveis
     } else {
       triggerHeight = 250; // Altura de acionamento padrão para telas maiores
     }

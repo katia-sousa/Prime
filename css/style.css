@@ -597,4 +597,12 @@ footer .footer{
     flex-direction: column;
     text-align: center;
 } 
+iframe{
+  max-width: 350px;
+}
+
+.container-localizacao{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
 }
