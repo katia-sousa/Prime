@@ -132,32 +132,6 @@ let currentIndex = 0;
     element.style.transform = "scale(1.2)";
    
   };
-
-function mudarImagem(direction) {
-  const carrossel = document.getElementById('carrossel');
-  const imagens = carrossel.getElementsByClassName('imagem');
-  currentIndex += direction;
-
-  if (currentIndex < 0) {
-    currentIndex = imagens.length - 1;
-  } else if (currentIndex >= imagens.length) {
-    currentIndex = 0;
-  }
-  const offset = imagens[currentIndex].offsetLeft;
-  carrossel.scrollLeft = offset;
-}
-/*function mostrarRestante() {
-  var restanteEquipe = document.getElementById('restante-equipe');
-  var linkContinueLendo = document.querySelector('a[href="javascript:void(0);"]');
-
-  if (restanteEquipe.style.display === 'none') {
-      restanteEquipe.style.display = 'block';
-      linkContinueLendo.style.display = 'none';
-  } else {
-      restanteEquipe.style.display = 'none';
-      linkContinueLendo.style.display = 'inline';
-  }
-}*/
 function toggleMenu() {
   const listItems = document.querySelector('.list-items');
   listItems.classList.toggle('show');

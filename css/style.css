@@ -5,10 +5,10 @@
 }
 :root {
   --cor-azul: #38b6ff;
-  --cor-laranja: #f0a322;
+  --cor-cinza: #f0a322;
   --cor-branca: #fff;
-  --cor-cinza:#676c72;
-  --cor-azul-escuro:#122a57;
+ /* --cor-cinza:#676c72;*/
+  --cor-azul-escuro:black;
   --cor-preta:black;
   --cor-verde:#4caf50;
 
@@ -16,17 +16,18 @@
 ul{
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 20;
 }
 ul li a{
     text-decoration: none;
+    font-weight: bolder;
+    
 }
 div img{
     display: block;
-    width: 40%;
+    width: 30%;
 }
 header {
-    background-color:var(--cor-cinza);
     height: 100px;
     display: flex;
     align-items: center;
@@ -114,7 +115,7 @@ header {
     padding-left: 11%;
 }
 .texto-inicio{
-    color:var(--cor-azul-escuro);
+    color:var(--cor-preta);
     justify-content: space-between;
    position: absolute;
    top: 20%;
@@ -336,7 +337,7 @@ font-size: 1.2em;
     right: 7px;
   }
 .container-externo{
-    background-color: var(--cor-azul-escuro);
+    background-color: var(--cor-cinza);
     width: 100%;
   
 }
@@ -476,6 +477,12 @@ margin: 2%;
     align-items: center;
     margin: 2%;
 }
+.container-localizacao{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 2%;
+}
 .equipe p{
     text-align: justify;
     width: 220px;
@@ -489,11 +496,11 @@ margin: 2%;
 }
 .contatos{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;   
 }
 footer{
-    background-color:var(--cor-azul-escuro);
+    background-color:var(--cor-cinza);
     height: 70px;
     display: flex;
     align-items: center;
