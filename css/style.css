@@ -416,7 +416,7 @@ font-size: 32px;
     border: 5px solid var(--cor-azul-escuro);
     margin-right: 20px;
     padding: 10px;
-    max-width: 240px;
+    max-width: 440px;
 }
 .item-plano .btn{
     margin: auto;
@@ -582,7 +582,7 @@ footer .footer{
 
     .alinhamento {
         position: absolute;
-        top: 15%;
+        top: 18%;
         right: 20%;
     }
     .equipe{
