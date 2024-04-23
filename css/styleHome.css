@@ -20,6 +20,13 @@
    left: 30%;
    font-size: 1.3em;
 }
+.text-central{
+  justify-content: space-between;
+  background-color: var(--cor-cinza);
+  height: 30%;
+  color: var(--cor-branca);
+
+}
 .beneficios{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -33,12 +40,46 @@
 .espaco{
   margin: 4%;
 }
-
 h1{
   text-align: center;
   font-size: 2em;
 
 }
+
+.flex-container-ofertas {
+  display: flex;
+  align-items: center;
+}
+.ofertas {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+}
+.ofertas img{
+  min-width: 10px;
+  margin-right: 3%;
+}
+.ofertas h2{
+  font-size: 2em;
+  color: var(--cor-azul-escuro);
+  margin-left: 5%;
+  display: flex;
+  margin-top: 10%;
+}
+.ofertas p{
+margin-bottom: 10px;
+margin-left: 5%;
+font-size: 1.2em;
+
+}
+.ofertas img{
+  min-width: 420px;
+
+}
+
+
 /* mobile */
 @media(max-width: 992px) {
   .text{
@@ -57,5 +98,11 @@ h1{
 .beneficios img{
   text-align: center;
  width: 90px;
+}
+.flex-container-ofertas {
+  flex-direction: column;
+}
+.ofertas {
+  flex-direction: column-reverse;
 }
 }
